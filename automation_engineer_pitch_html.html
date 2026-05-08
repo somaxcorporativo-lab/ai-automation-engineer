@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Automation Engineer | Application</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b1020;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .background {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(59,130,246,0.18), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(168,85,247,0.18), transparent 30%),
+        #0b1020;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .hero {
+      padding: 48px;
+      border-radius: 28px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(59,130,246,0.14);
+      color: #8ec5ff;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.05;
+      font-weight: 800;
+      margin-bottom: 24px;
+      max-width: 850px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #60a5fa, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: #d1d5db;
+      font-size: 20px;
+      line-height: 1.7;
+      max-width: 850px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 26px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(96,165,250,0.4);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .section-text {
+      color: #cbd5e1;
+      line-height: 1.9;
+      font-size: 18px;
+      max-width: 950px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .pill {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #f8fafc;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    .timeline-item {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .timeline-item h4 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-item p {
+      color: #cbd5e1;
+      line-height: 1.8;
+    }
+
+    .cta {
+      margin-top: 70px;
+      text-align: center;
+      padding: 50px 30px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(59,130,246,0.18), rgba(168,85,247,0.18));
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      color: #dbe4f0;
+      font-size: 18px;
+      margin-bottom: 28px;
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 28px;
+      border-radius: 14px;
+      background: #ffffff;
+      color: #0b1020;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.04);
+    }
+
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .hero {
+        padding: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="container">
+    <section class="hero">
+      <div class="tag">AI Automation Engineer • n8n • Python • Agentic Workflows</div>
+
+      <h1>
+        Building <span class="gradient">AI-powered automation systems</span>
+        that connect workflows, APIs, CRMs, and operational intelligence.
+      </h1>
+
+      <p class="subtitle">
+        I specialize in AI automation, workflow orchestration, CRM intelligence, and scalable operational systems using tools like n8n, APIs, LLM integrations, and modern automation pipelines.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Workflow Automation</h3>
+          <p>
+            Built intelligent automations connecting CRMs, WhatsApp APIs, forms, onboarding systems, dashboards, and operational pipelines.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>AI & Agentic Systems</h3>
+          <p>
+            Developed AI-assisted workflows capable of classifying leads, generating contextual outputs, orchestrating actions, and supporting decision-making.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Operational Reliability</h3>
+          <p>
+            Focused on scalable systems with retries, monitoring, synchronization logic, webhook handling, and end-to-end workflow visibility.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Full Stack Mindset</h3>
+          <p>
+            Experience working across integrations, backend logic, workflow orchestration, internal tooling, and AI-enhanced automation systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">What I Build</h2>
+      <p class="section-text">
+        My focus is building AI-native operational systems that reduce manual work, improve response speed, automate business logic, and create scalable workflows across sales, operations, and customer management.
+      </p>
+
+      <div class="stack">
+        <div class="pill">n8n</div>
+        <div class="pill">Python</div>
+        <div class="pill">Node.js</div>
+        <div class="pill">REST APIs</div>
+        <div class="pill">Webhooks</div>
+        <div class="pill">LLMs</div>
+        <div class="pill">AI Automation</div>
+        <div class="pill">CRM Systems</div>
+        <div class="pill">Workflow Orchestration</div>
+        <div class="pill">Agentic Systems</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Selected Automation Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>AI-Assisted CRM Automation</h4>
+          <p>
+            Built workflows capable of centralizing leads from multiple channels, automatically classifying opportunities with AI, routing leads through CRM stages, and triggering onboarding and operational actions.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Operational Workflow Orchestration</h4>
+          <p>
+            Designed automations integrating APIs, spreadsheets, forms, communication platforms, and dashboards with retry logic, synchronization flows, webhook processing, and operational monitoring.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>AI Workflow Systems</h4>
+          <p>
+            Implemented structured AI pipelines for contextual generation, classification, summarization, process assistance, and multi-step operational workflows with human-in-the-loop validation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Open to AI Automation Opportunities</h2>
+      <p>
+        Interested in contributing to modern AI automation systems, scalable workflows, and operational intelligence platforms in fast-moving environments.
+      </p>
+
+      <a class="button" href="https://wa.me/5561996946009" target="_blank">
+        Contact on WhatsApp
+      </a>
+    </section>
+
+    <footer>
+      AI Automation Engineer • Workflow Systems • Agentic Operations
+    </footer>
+  </div>
+</body>
+</html>
